@@ -1,7 +1,7 @@
 import { readFileSync } from "fs";
 
 // convert .txt file to array of strings
-const getElves = readFileSync("./input.txt", "utf-8").split(/\r?\n\n/);
+const getElves = readFileSync("./day01/input.txt", "utf-8").split(/\r?\n\n/);
 
 // convert string array into array of integer groups and reduce to single integer
 const getTotalCalories = getElves.map((elf) => {
